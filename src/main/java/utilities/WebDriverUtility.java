@@ -162,7 +162,7 @@ public class WebDriverUtility extends Base {
 
 	public static void screenShot() {
 
-		String location = System.getProperty("user.dir") + "\\output\\";
+		String location = System.getProperty("user.dir") + "\\screenshots\\";
 		String screenShotFileName = screenShotFileName();
 
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
