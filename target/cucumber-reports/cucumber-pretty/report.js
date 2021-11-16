@@ -1,132 +1,110 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("RetailPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("AddToCart.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Retail Website Features",
+  "line": 1,
+  "name": "add to cart",
   "description": "",
-  "id": "retail-website-features",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@retailPage"
-    }
-  ]
+  "id": "add-to-cart",
+  "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3848462800,
+  "duration": 5663449100,
   "status": "passed"
 });
 formatter.background({
-  "comments": [
-    {
-      "line": 4,
-      "value": "#Every feature file starts with Feature: \u003cName of feature file\u003e"
-    },
-    {
-      "line": 5,
-      "value": "#Every Scenario starts with Scenario: \u003cName of Test case we want to automate\u003e"
-    },
-    {
-      "line": 6,
-      "value": "#Gherkin keywords are Given When Then"
-    },
-    {
-      "line": 7,
-      "value": "#Given is precondition"
-    },
-    {
-      "line": 8,
-      "value": "#When is an Action taken"
-    },
-    {
-      "line": 9,
-      "value": "#Then is an expected result ( we write validation )"
-    },
-    {
-      "line": 10,
-      "value": "#And is repeating an action or can be used following Given keyword as well"
-    },
-    {
-      "line": 11,
-      "value": "#But is used for negative scenarios verification"
-    }
-  ],
-  "line": 14,
+  "line": 3,
   "name": "",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.step({
-  "line": 15,
-  "name": "User is on Retail website",
+  "line": 5,
+  "name": "open Retail website",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "RetailPageTestStepDefinitions.user_is_on_Retail_website()"
+  "location": "AddToCartMackBookStepDef.open_Retail_website()"
 });
 formatter.result({
-  "duration": 2609128700,
+  "duration": 1810908000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 20,
-  "name": "Search functionality Test case",
+  "line": 8,
+  "name": "",
   "description": "",
-  "id": "retail-website-features;search-functionality-test-case",
+  "id": "add-to-cart;",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 19,
-      "name": "@Test"
+      "line": 7,
+      "name": "@AddToCartMacBook"
     }
   ]
 });
 formatter.step({
-  "line": 21,
-  "name": "User search for \u0027iphone\u0027",
+  "line": 9,
+  "name": "user click on Laptops\u0026NoteBooks",
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
-  "name": "User click on search button",
+  "line": 10,
+  "name": "User click on ShowAllLaptops\u0026NoteBooks",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User click on Macbook",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
-  "name": "User should see Iphone image",
+  "line": 12,
+  "name": "User click on Add to cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "verify the success message ‘Success: You have added’",
   "keyword": "Then "
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "iphone",
-      "offset": 17
-    }
-  ],
-  "location": "RetailPageTestStepDefinitions.user_search_for_iphone(String)"
+  "location": "AddToCartMackBookStepDef.user_click_on_Laptops_NoteBooks()"
 });
 formatter.result({
-  "duration": 723652500,
+  "duration": 180017300,
   "status": "passed"
 });
 formatter.match({
-  "location": "RetailPageTestStepDefinitions.user_click_on_search_button()"
+  "location": "AddToCartMackBookStepDef.user_click_on_ShowAllLaptops_NoteBooks()"
 });
 formatter.result({
-  "duration": 1975384300,
+  "duration": 678322000,
   "status": "passed"
 });
 formatter.match({
-  "location": "RetailPageTestStepDefinitions.user_should_see_Iphone_image()"
+  "location": "AddToCartMackBookStepDef.user_click_on_Macbook()"
 });
 formatter.result({
-  "duration": 578000700,
+  "duration": 1529871900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddToCartMackBookStepDef.user_click_on_Add_to_cart()"
+});
+formatter.result({
+  "duration": 151112700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AddToCartMackBookStepDef.verify_the_success_message_Success_You_have_added()"
+});
+formatter.result({
+  "duration": 543851400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 780070000,
+  "duration": 5134645500,
   "status": "passed"
 });
 });

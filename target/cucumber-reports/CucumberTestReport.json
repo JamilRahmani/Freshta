@@ -1,43 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 4,
-            "value": "#Every feature file starts with Feature: \u003cName of feature file\u003e"
-          },
-          {
-            "line": 5,
-            "value": "#Every Scenario starts with Scenario: \u003cName of Test case we want to automate\u003e"
-          },
-          {
-            "line": 6,
-            "value": "#Gherkin keywords are Given When Then"
-          },
-          {
-            "line": 7,
-            "value": "#Given is precondition"
-          },
-          {
-            "line": 8,
-            "value": "#When is an Action taken"
-          },
-          {
-            "line": 9,
-            "value": "#Then is an expected result ( we write validation )"
-          },
-          {
-            "line": 10,
-            "value": "#And is repeating an action or can be used following Given keyword as well"
-          },
-          {
-            "line": 11,
-            "value": "#But is used for negative scenarios verification"
-          }
-        ],
-        "line": 14,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -45,13 +11,13 @@
         "steps": [
           {
             "result": {
-              "duration": 2609128700,
+              "duration": 1810908000,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User is on Retail website",
+            "line": 5,
+            "name": "open Retail website",
             "match": {
-              "location": "RetailPageTestStepDefinitions.user_is_on_Retail_website()"
+              "location": "AddToCartMackBookStepDef.open_Retail_website()"
             },
             "keyword": "Given "
           }
@@ -61,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 3848462800,
+              "duration": 5663449100,
               "status": "passed"
             },
             "match": {
@@ -69,14 +35,14 @@
             }
           }
         ],
-        "line": 20,
-        "name": "Search functionality Test case",
+        "line": 8,
+        "name": "",
         "description": "",
-        "id": "retail-website-features;search-functionality-test-case",
+        "id": "add-to-cart;",
         "after": [
           {
             "result": {
-              "duration": 780070000,
+              "duration": 5134645500,
               "status": "passed"
             },
             "match": {
@@ -89,65 +55,77 @@
         "steps": [
           {
             "result": {
-              "duration": 723652500,
+              "duration": 180017300,
               "status": "passed"
             },
-            "line": 21,
-            "name": "User search for \u0027iphone\u0027",
+            "line": 9,
+            "name": "user click on Laptops\u0026NoteBooks",
             "match": {
-              "arguments": [
-                {
-                  "val": "iphone",
-                  "offset": 17
-                }
-              ],
-              "location": "RetailPageTestStepDefinitions.user_search_for_iphone(String)"
+              "location": "AddToCartMackBookStepDef.user_click_on_Laptops_NoteBooks()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1975384300,
+              "duration": 678322000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User click on search button",
+            "line": 10,
+            "name": "User click on ShowAllLaptops\u0026NoteBooks",
             "match": {
-              "location": "RetailPageTestStepDefinitions.user_click_on_search_button()"
+              "location": "AddToCartMackBookStepDef.user_click_on_ShowAllLaptops_NoteBooks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1529871900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on Macbook",
+            "match": {
+              "location": "AddToCartMackBookStepDef.user_click_on_Macbook()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 578000700,
+              "duration": 151112700,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User should see Iphone image",
+            "line": 12,
+            "name": "User click on Add to cart",
             "match": {
-              "location": "RetailPageTestStepDefinitions.user_should_see_Iphone_image()"
+              "location": "AddToCartMackBookStepDef.user_click_on_Add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 543851400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "verify the success message ‘Success: You have added’",
+            "match": {
+              "location": "AddToCartMackBookStepDef.verify_the_success_message_Success_You_have_added()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 19,
-            "name": "@Test"
+            "line": 7,
+            "name": "@AddToCartMacBook"
           }
         ]
       }
     ],
-    "name": "Retail Website Features",
+    "name": "add to cart",
     "description": "",
-    "id": "retail-website-features",
+    "id": "add-to-cart",
     "keyword": "Feature",
-    "uri": "RetailPage.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@retailPage"
-      }
-    ]
+    "uri": "AddToCart.feature"
   }
 ]
